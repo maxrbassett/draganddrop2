@@ -1,0 +1,180 @@
+body{
+    height: 720px;
+    margin-top: 50px;
+    padding: 0;
+    text-align: center;  
+    background-color: #C9F4F7;
+    background-image: url(images/leon_back.png);  
+    background-repeat: repeat-x;    
+    background-position: bottom;
+}
+
+#head, #arm1, #arm2, #leg1, #leg2, #body{
+    display: inline-block;
+    background-size: cover;
+    padding-left: 20px;
+}
+
+#blankHead, #blankbody,#blankarm1,#blankarm2,#blankleg1,#blankleg2 {
+    position: absolute;
+    margin: -100px 0 0 -150px;        
+    background-image: url(images/dot.png);
+    background-size: cover;
+    animation-name: bk1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;    
+    animation-direction: alternate;
+}
+
+@keyframes bk1 {
+    from { background-image: url(images/dot.png);}
+    to { background-image: url(images/dot2.png);} 
+}
+
+ #blankHead {
+    width: 200px;
+    height: 200px;
+    top: 400px;
+    right: 323px;
+    z-index: 22;     
+    animation-name: bh;
+}
+
+@keyframes bh {
+    from {right: 50px;}
+    to {right: 450px;} 
+}
+
+ #blankbody {
+    width: 150px;
+    height: 150px;
+    top: 571px;
+    right: 70px;       
+    z-index: 2;
+    animation-name: bb;
+}
+
+@keyframes bb {
+    from {right: 70px;}
+    to {right: 470px;} 
+}
+
+#blankarm1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 580px;
+    right: 60px;
+    animation-name: ba1;
+}
+
+@keyframes ba1 {
+    from {right: 180px;}
+    to {right: 580px;} 
+}
+
+#blankarm2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 540px;
+    right: 330px;    
+    z-index: 22;
+    animation-name: ba2;
+}
+
+@keyframes ba2 {
+    from {right: 40px;}
+    to {right: 440px;} 
+}
+
+
+#blankleg1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 692px;
+    right: 35px;    
+    z-index: 24;
+    z-index: 0;
+    animation-name: bl1;
+}
+
+@keyframes bl1 {
+    from {right: 150px;}
+    to {right: 550px;} 
+}
+
+#blankleg2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 692px;;
+    right: 374px;    
+    z-index: 0;
+    animation-name: bl2;
+}
+
+@keyframes bl2 {
+    from {right: 100px;}
+    to {right: 500px;} 
+}
+
+#pos{
+    
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+#instructions{
+    position: absolute;
+    top: 250px;
+    left: 40%;
+    height: 700px;
+    width: 700px;
+    opacity:0;
+    -webkit-animation: fade-in 15s;
+    animation-delay: 2s;
+}
+@keyframes fade-in{
+    0% { opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes fade-out{
+    0% { opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+#anim1 {
+    position: absolute;
+    width: 175px;
+    right: 0%;    
+    z-index: -20;
+    animation-name: run1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes run1 {
+    from {right: 0%;}
+    to {right: 100%;}
+}
+
+#anim2 {
+    position: absolute;
+    width: 175px;
+    top: 350px;
+    left: 0%;    
+    z-index: -20;
+    animation-name: run2;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;  
+
+}
+
+@keyframes run2 {
+    from {left: 0%;}
+    to {left: 100%;}
+}
+

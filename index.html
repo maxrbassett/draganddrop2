@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="script.js"></script>
+        <title>Animal Puzzle</title>
+        <style>
+            .blank {
+                display: inline-block;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+       
+        <div id="anim1"> <img src="images/cloud.png"></div>
+        <div id="anim2"> <img src="images/cloud2.png"></div>
+        <img id="pos" src="images/logo.png" style="width: 150px;">
+
+        
+        <img id="instructions" src="images/Instructions-for-Site.png">
+        
+
+        <div id="head" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="images/head-02.svg"
+        id="headImg" width="200"  draggable="true" ondragstart="drag(event)">
+        </div>
+
+        <div id="body" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="images/body-01.svg"
+        id="bodyImg"  width="150"  draggable="true" ondragstart="drag(event)">
+        </div>
+
+        <div id="arm1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="images/left-hand-03.svg"
+        id="arm1Img" width="100" height="100"  draggable="true" ondragstart="drag(event)">
+        </div>
+
+        <div id="arm2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="images/right-had-04.svg"
+        id="arm2Img" width="100" height="100"  draggable="true" ondragstart="drag(event)">
+        </div>
+
+        <div id="leg1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="images/left-leg-05.svg"
+        id="leg1Img" width="100" height="100"  draggable="true" ondragstart="drag(event)">
+        </div>
+
+        <div id="leg2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="images/right-leg-06.svg"
+        id="leg2Img" width="100" height="100"  draggable="true" ondragstart="drag(event)">
+        </div>
+
+        <div  class="blank" id="blankHead" ondrop="dropHead(event)" ondragover="allowDrop(event)"></div>
+        <div class="blank"  id="blankbody" ondrop="dropBody(event)" ondragover="allowDrop(event)"></div>
+        <div  class="blank" id="blankarm1" ondrop="dropArm1(event)" ondragover="allowDrop(event)"></div>
+        <div  class="blank" id="blankarm2" ondrop="dropArm2(event)" ondragover="allowDrop(event)"></div>
+        <div class="blank"  id="blankleg1" ondrop="dropLeg1(event)" ondragover="allowDrop(event)"></div>
+        <div  class="blank" id="blankleg2" ondrop="dropLeg2(event)" ondragover="allowDrop(event)"></div>
+
+    </body>
+    
+</html>
